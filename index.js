@@ -41,13 +41,26 @@ productsBtn2.addEventListener('click', () => {
 //Sending Email
 const emailForm = document.querySelector('.emailForm');
 
+//Custom alert Code
+const hideAlert = () => {
+  const el = document.querySelector('.alert');
+  if (el) el.parentElement.removeChild(el);
+};
+
+// type is 'success' or 'error'
+const showAlert = (time = 3) => {
+  hideAlert();
+  const markup = `<div class="alert">Please give all the information correctly</div>`;
+  document.querySelector('body').insertAdjacentHTML('afterbegin', markup);
+  window.setTimeout(hideAlert, time * 1000);
+};
+
 emailForm.addEventListener('submit', e => {
   e.preventDefault();
   const name = document.querySelector('.name').value;
   const email = document.querySelector('.email').value;
   const contact = document.querySelector('.contact').value;
   const message = document.querySelector('.message').value;
-  console.log(name);
 
   if (name && email && contact && message) {
     window.open(
@@ -55,7 +68,7 @@ emailForm.addEventListener('submit', e => {
       Sender Message:${message}`
     );
   } else {
-    alert('Please provide all the information correctly');
+    showAlert();
   }
 });
 
