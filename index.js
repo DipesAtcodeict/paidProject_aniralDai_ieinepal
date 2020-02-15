@@ -95,7 +95,7 @@ const carouselData = [
     caption: 'Metal Frame Truss.'
   },
   {
-    imgUrl: 'assets/products/industrialWaterTreatmentPlant.jpg',
+    imgUrl: 'assets/products/industrialWaterTreatmentPlant.JPG',
     caption: 'Industrial Water Treatment.'
   },
   {
@@ -115,7 +115,7 @@ const carouselData = [
     caption: 'Washing Machine'
   },
   {
-    imgUrl: 'assets/products/woodFiredThreePassDryer.jpg',
+    imgUrl: 'assets/products/woodFiredThreePassDryer.JPG',
     caption: 'Wood Fired Three Pass Dryer.'
   },
   {
@@ -123,7 +123,7 @@ const carouselData = [
     caption: 'Trolleys'
   },
   {
-    imgUrl: 'assets/products/woodFiredVerticalTubeBoiler.jpg',
+    imgUrl: 'assets/products/woodFiredVerticalTubeBoiler.JPG',
     caption: 'Wood Fired Vertical Tube Boiler.'
   }
 ];
