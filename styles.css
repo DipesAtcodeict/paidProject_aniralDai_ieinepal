@@ -8,12 +8,12 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: rgb(34, 31, 31);
-  background-image: linear-gradient(260deg, #3275a1 0%, #190f1b 100%);
+  /* background-image: linear-gradient(260deg, #3275a1 0%, #190f1b 100%); */
 }
 
 .navbar {
   font-size: 18px;
-  background-image: linear-gradient(260deg, #3275a1 0%, #190f1b 100%);
+  background-image: linear-gradient(260deg, #6c6e70 0%, #363336 100%);
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding-bottom: 5px;
 }
@@ -99,12 +99,12 @@ body {
   background-image: url('assets/main.jpg');
   background-position: center;
   background-size: cover;
+  text-align: center;
 }
 
 .shortIntro-intro {
-  color: rgb(223, 202, 202);
-  font-size: 1.4rem;
-  letter-spacing: 1.5px;
+  color: white;
+  font-size: 1.3rem;
   height: 20vh;
   width: 40vw;
   margin: auto;
@@ -139,6 +139,38 @@ body {
     width: 100%;
   }
 }
+/* Our Products */
+.ourProducts {
+  background-image: linear-gradient(260deg, #6c6e70 0%, #363336 100%);
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  width: 100%;
+}
+
+.ourProducts h2 {
+  margin: 0.6rem;
+  font-size: 1.9rem;
+}
+
+.ourProducts p {
+  font-size: 1.4rem;
+}
+
+.ourProducts ul li {
+  margin: 0.8rem;
+  list-style: none;
+  background-color: #16161667;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.ourProducts ul li:hover {
+  transform: scale(1.3);
+}
 
 /* About Us */
 
@@ -158,7 +190,7 @@ body {
 .description {
   flex-basis: 70%;
   padding-left: 10px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 1.9rem;
 }
 
@@ -177,6 +209,7 @@ body {
 }
 
 /* Contact Us */
+
 .tellUs {
   text-align: center;
   padding: 2rem;
@@ -231,8 +264,8 @@ body {
 }
 
 .socialLink img {
-  height: 65px;
-  width: 65px;
+  height: 60px;
+  width: 60px;
   margin: 0.7rem;
   transition: transform 0.5s ease;
 }
@@ -246,13 +279,14 @@ body {
 }
 
 .contactDetails a {
-  color: rgb(22, 157, 190);
-  font-size: 2rem;
+  /* color: rgb(22, 157, 190); */
+  color: white;
+  font-size: 1.2rem;
   display: block;
   padding: 5px;
   font-weight: bold;
 }
 
 .contactDetails a:hover {
-  font-size: 2.1rem;
+  font-size: 1.4rem;
 }

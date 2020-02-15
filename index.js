@@ -9,6 +9,8 @@ navBarToggle.addEventListener('click', function() {
 //scroll code
 let aboutUsBtn = document.getElementById('aboutUs-btn');
 let contactUsBtn = document.getElementById('contactUs-btn');
+let productsBtn = document.getElementById('products-btn');
+let productsBtn2 = document.getElementById('products-btn2');
 
 scrollAndGoToDiv = targetDiv => {
   let scrollToDiv = document.querySelector(`.${targetDiv}`);
@@ -26,6 +28,14 @@ aboutUsBtn.addEventListener('click', () => {
 
 contactUsBtn.addEventListener('click', () => {
   scrollAndGoToDiv('contactUs');
+});
+
+productsBtn.addEventListener('click', () => {
+  scrollAndGoToDiv('ourProducts');
+});
+
+productsBtn2.addEventListener('click', () => {
+  scrollAndGoToDiv('ourProducts');
 });
 
 //Sending Email
