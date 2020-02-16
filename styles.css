@@ -8,7 +8,6 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: rgb(34, 31, 31);
-  /* background-image: linear-gradient(260deg, #3275a1 0%, #190f1b 100%); */
 }
 
 .navbar {
@@ -348,4 +347,51 @@ body {
   -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
   background-color: rgb(80, 6, 6);
+}
+
+/* Our Customers page */
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: scroll;
+  height: 100%;
+}
+
+.customers {
+  position: absolute;
+  margin: 3rem;
+  font-size: 1.5rem;
+  color: rgb(74, 129, 151);
+}
+
+.customers h4 {
+  margin: 1rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.customer_indi {
+  margin: 1rem;
+  transition: transform 0.2s;
+}
+
+.customer_indi:hover {
+  transform: scale(1.01);
+}
+
+.backHome {
+  position: fixed;
+  top: 88vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-size: 2rem;
+  background-color: rgb(83, 20, 20);
+  padding: 0.6;
+}
+
+.backHome a {
+  color: white;
+  padding: 1rem;
 }
